@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="header">
+        <div ><img src="resources/logo.png"></div>
+        <div><a href="#"><h2>Discount</h2></a></div>
+    </div>
+    <div class="overall">
+        <div class="row_1">
+        <div class="list">
+        <div class="allTime">  
+          <ul><h1>All Time</h1>
+                <li>Idly</li>
+                <li>Plain Dosa</li>
+                <li>Masala Dosa</li>
+                <li>Onion Dosa</li>
+                <li>Ravva Dosa</li>
+                <li>Utappam</li>
+                <li>Poori</li>
+                <li>Doas 70mm</li>
+                <li>Vada</li>
+                <li>Moong dal Dosa</li>
+            </ul>
+            <div>
+                    <ul><h1>Cost</h1>
+                        <li>50rs</li>
+                        <li>60rs</li>
+                        <li>70rs</li>
+                        <li>70rs</li>
+                        <li>70rs</li>
+                        <li>60rs </li>
+                        <li>60rs</li>
+                        <li>80rs</li>
+                        <li>50rs</li>
+                        <li>80rs</li>
+                    </ul>
+            </div>
+            </div>
+            <div class="Beverages">
+            <ul><h1>Beverages</h1>
+
+                <li>Coffee/Tea</li>
+                <li>Soft Drink</li>
+                <li>Bourvita/Horlics</li>
+                <li>Mineral Water</li>
+                <li>Lassi</li>
+                <li>Cold Coffee</li>
+                <li>Mango Lassi</li>
+                <li>Fresh lime Soda</li>
+                <li>Butter Milk</li>
+                <li>Fruit Punch</li>
+
+            </ul>
+            <div>
+                    <ul><h1>Cost</h1>
+                        <li>30rs</li>
+                        <li>40rs</li>
+                        <li>40rs</li>
+                        <li>40rs</li>
+                        <li>40rs</li>
+                        <li>40rs </li>
+                        <li>40rs</li>
+                        <li>40rs</li>
+                        <li>40rs</li>
+                        <li>40rs</li>
+                    </ul>
+            </div>
+            </div>
+            
+        </div>
+        <div class="orderMenu" id="orderMenuDiv">
+            
+            <h1>Select The Item/Items</h1>
+            <p>pick the item from list</p>
+            <select id = "itemCostSelect">
+                    <option value="Idly">Idly</option>
+                    <option value="Plain Dosa">Plain Dosa</option>
+                    <option value="Masala Dosa"> Masala Dosa</option>
+                    <option value="Onion Dosa">Onion Dosa</option>
+                    <option value="Ravva Dosa">Ravva Dosa</option>
+                    <option value = "Utappam">Utappam</option>
+                    <option value="Poori">Poori</option>
+                    <option value="Doas 70mm">Doas 70mm</option>
+                    <option value = "Vada">Vada</option>
+                    <option value="Moong dal Dosa">Moong dal Dosa</option>
+                    <option value="Coffee/Tea">Coffee/Tea</option>
+                    <option value="Soft Drink">Soft Drink</option>
+                    <option value="Bournvita/Horlicks">Bournvita/Horlicks</option>
+                    <option value=" Mineral Water">Mineral Water</option>
+                    <option value="Lassi">Lassi</option>
+                    <option value="Cold Coffee">Cold Coffee</option>
+                    <option value="Mango Lassi">Mango Lassi</option>
+                    <option value="Fresh Lime Soda">Fresh Lime Soda</option>
+                    <option value="Butter Milk">Butter Milk</option>
+                    <option value="Fruit Punch">Fruit Punch</option>
+            </select>
+            <label>Number Of Items</label>
+            <input type = "text" id = "numInput" value="1"/>
+            <br>
+            <button onclick="orderItem()" id = "btn">Order</button>
+            <button onclick = "orderClear()">clear Item</button>
+            <button onclick="clearCount()">ClearCount</button>
+            <p class="sample"></p>
+
+        </div>
+          </div>
+        </div>
+        
+    <div class="row_2">
+        <div id="divRow2">
+            <div id = "divTemp">
+                <pre><h2>No.of     Item Name            Cost       Quantity       Totalcost  </h2></pre>
+            </div>  
+        </div>
+    </div>
+    <div class="row3">
+        <p>note:If your purchase cross the amount of 200rs we will provide 10 % discount</p>
+    <div class="tax">
+        <p id = "cost"></p>
+        <p id="discount"></p>
+        <p id="taxValue"></p>
+            <h1 id="finalOut"></h1>
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

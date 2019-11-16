@@ -1,0 +1,168 @@
+
+.row_1 {
+    display: flex;
+    flex-direction: row;
+    background: url("resources/listback.jpeg");  
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.row_1 > div {
+    flex-grow: 1;
+    height:500px;
+    /* margin:100px; */
+}
+.row_2 div {
+    text-align: center;
+}
+.row_2 h3 {
+    padding: 1px;
+    margin: 0px 80px 0px 80px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+   
+}
+.orderMenu {
+    width: 200px;
+    background: url("resources/oredertry.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    border-radius: 50%;
+    border: 5px solid white;
+    color: #c36311;
+    font-size: 30px; 
+}
+.list div ul { 
+    height: 200px;
+    margin: 20px;
+    margin-left: 30px;
+ 
+
+}
+.list > div {
+    width: 450px;
+    height: 200px;
+    /* margin:20px; */
+}
+.orderMenu {
+    text-align: center;
+}
+.allTime {
+    display: flex;
+    flex-direction: row;
+}
+.allTime > div {
+    margin:20px;
+    
+}
+.allTime > div:last-child ul {
+    list-style: none;
+}
+.Beverages {
+    display: flex;
+    flex-direction: row;
+}
+.Beverages > div {
+    margin:20px;
+}
+.Beverages > div:last-child ul {
+    list-style: none;
+}
+
+.orderMenu select {
+    height: 40px;
+    margin: 30px;
+}
+.row3 {
+
+    height: 200px;
+}
+.tax    {
+    width: 20%;
+    float: right;
+}
+.header{
+    height: 100px;
+
+}
+.header div {
+    width: 200px;
+    height: 90px;
+}
+
+.header div:first-child {
+    float: left;
+}
+.header div:last-child {
+    float: right;
+}
+.tax {
+    background: #b3b3b3;
+    border-radius: 40px;
+    border: 6px solid black;
+    padding: 20px;
+    font-size: 15px;
+    margin-right:10% 
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header img {
+    height: 90px;
+    width: 180px;
+}
+.row3 > p {
+    font-size: 20px;
+    margin: 40px;
+    color: red;
+
+}
+
+
+/*media Query*/
+
+
+
+@media(max-width:996px){
+
+.list {
+    flex-direction: column;
+    width: auto;
+    border: 2px solid yellow;
+}
+.list div {
+    border: 2px solid black;
+    height: 300px !important;
+}
+.row_1{
+    flex-direction: column;
+    height:1200px;
+    border: 2px solid red;
+}
+
+.orderMenu {
+    margin-top :100px;
+    width: auto;
+}
+.row_2 div {
+    text-align: left;
+    
+}
+.tax {
+    width: 300px;
+    margin-left: 30%;
+    float: left;
+}
+.orderMenu
+{
+    border: 2px solid red;
+}
+
+}
